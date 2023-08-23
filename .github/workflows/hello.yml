@@ -9,7 +9,7 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - uses: checkout@v3
+      - uses: actions/checkout@v3
           
       - name: Hello from the script      
         run: .github/scripts/script.sh
