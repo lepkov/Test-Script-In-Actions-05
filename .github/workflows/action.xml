@@ -7,6 +7,6 @@ jobs:
   build:
     steps:
       name: Hello from the script
-      run: sh .github/scripts/
+      run: sh .github/scripts/script.sh
       env: 
         AUTHOR_NAME: ${{ secrets.AUTHOR_NAME }}
