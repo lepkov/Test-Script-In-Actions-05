@@ -10,7 +10,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Hello from the script      
-        run: .github/scripts/script.sh
+        run: chmod +x .github/scripts/script.sh && .github/scripts/script.sh
         shell: bash
         env: 
           AUTHOR_NAME: ${{ secrets.AUTHOR_NAME }}
