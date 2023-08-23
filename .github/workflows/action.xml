@@ -1,6 +1,7 @@
 name: Hello from the script
 
 on: 
+  push: main
   workflow_dispatch:
 
 jobs:
