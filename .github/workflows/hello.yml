@@ -9,12 +9,7 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - name: Debugging
-        run: |
-          pwd
-          ls -lha ./
-          ls -la .github/scripts
-          ls -la .github/scripts/script.sh
+      - uses: checkout@v3
           
       - name: Hello from the script      
         run: .github/scripts/script.sh
