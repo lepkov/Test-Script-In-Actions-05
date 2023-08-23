@@ -9,4 +9,4 @@ jobs:
       name: Hello from the script
       run: sh .github/scripts/
       env: 
-        author_name: ${{ secrets.author_name }}
+        AUTHOR_NAME: ${{ secrets.AUTHOR_NAME }}
