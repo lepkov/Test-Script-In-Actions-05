@@ -1,7 +1,8 @@
 name: Hello from the script
 
 on: 
-  push: main
+  push:
+    branches: [ "main" ]
   workflow_dispatch:
 
 jobs:
