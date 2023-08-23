@@ -11,7 +11,7 @@ jobs:
     steps:
       - name: Debugging
         run: |
-          ls -lha
+          ls -lha ./
           ls -la .github/scripts
           ls -la .github/scripts/script.sh
           
