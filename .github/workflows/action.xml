@@ -1,0 +1,12 @@
+name: Hello from the script
+
+on: 
+  workflow_dispatch:
+
+jobs:
+  build:
+    steps:
+      name: Hello from the script
+      run: sh .github/scripts/
+      env: 
+        author_name: ${{ secrets.author_name }}
