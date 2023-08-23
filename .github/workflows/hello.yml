@@ -12,7 +12,6 @@ jobs:
       - uses: actions/checkout@v3
           
       - name: Hello from the script      
-        run: .github/scripts/script.sh
-        shell: bash
+        run: sh .github/scripts/script.sh
         env: 
           AUTHOR_NAME: ${{ secrets.AUTHOR_NAME }}
