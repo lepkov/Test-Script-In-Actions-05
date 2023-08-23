@@ -9,8 +9,13 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
+      - name: Debugging
+        run: |
+          ls -la .github/scripts
+          ls -la .github/scripts/script.sh
+          
       - name: Hello from the script      
-        run: chmod +x .github/scripts/script.sh && .github/scripts/script.sh
+        run: .github/scripts/script.sh
         shell: bash
         env: 
           AUTHOR_NAME: ${{ secrets.AUTHOR_NAME }}
