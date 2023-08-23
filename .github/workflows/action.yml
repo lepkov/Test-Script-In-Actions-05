@@ -10,6 +10,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Hello from the script      
-        run: sh .github/scripts/script.sh
+        run: .github/scripts/script.sh
+        shell: bash
         env: 
           AUTHOR_NAME: ${{ secrets.AUTHOR_NAME }}
