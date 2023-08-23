@@ -7,8 +7,9 @@ on:
 
 jobs:
   build:
+    runs-on: ubuntu-latest
     steps:
-      name: Hello from the script
+      name: Hello from the script      
       run: sh .github/scripts/script.sh
       env: 
         AUTHOR_NAME: ${{ secrets.AUTHOR_NAME }}
